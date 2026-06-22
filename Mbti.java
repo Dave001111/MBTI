@@ -5,6 +5,11 @@ public class Mbti {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+     int extrovert = 0, introvert = 0;
+     int sensing = 0,  intuition = 0;
+     int thinking = 0, feeling = 0;
+     int judging = 0, perceiving = 0;
+
         String[] questions = {
             "1. A:expend energy, enjoy groups, B:conserve energy, enjoy one-on-one",
             "2. A:interpret literally, B:look for meaning and possibilities",
@@ -55,41 +60,51 @@ public class Mbti {
         if (answers[0].equalsIgnoreCase("A")) {
             System.out.println("A: expend energy, enjoy groups");
             countA = countA + 1;
+            extrovert++;
            } else {
             System.out.println("B: conserve energy, enjoy one-on-one");
             countB = countB + 1;
+            introvert++;
          }
         
         if (answers[4].equalsIgnoreCase("A")) {
             System.out.println("A: more outgoing, think out loud");
             countA = countA + 1;
+            introvert++;
           } else {
             System.out.println("B: more reserved, think to yourself");
             countB = countB + 1;
+            extrovert++;
         }
         
         if (answers[8].equalsIgnoreCase("A")) {
             System.out.println("A: seek many tasks, public activities, interaction with others");
             countA = countA + 1;
+            introvert++;
            } else {
             System.out.println("B: seek private, solitary activities with quiet to concentrate");
             countB = countB + 1;
+            extrovert++;
         }
         
         if (answers[12].equalsIgnoreCase("A")) {
             System.out.println("A: external, communicative, express yourself");
             countA = countA + 1;
+            introvert++;
            } else {
             System.out.println("B: internal, reticent, keep to yourself");
             countB = countB + 1;
+            extrovert++;
         }
         
         if (answers[16].equalsIgnoreCase("A")) {
             System.out.println("A: active, initiate");
             countA = countA + 1;
+            introvert++;
           } else {
             System.out.println("B: reflective, deliberate");
             countB = countB + 1;
+            extrovert++;
         }
         
         System.out.println("Number of A selected:" + countA);
@@ -104,41 +119,51 @@ public class Mbti {
         if (answers[1].equalsIgnoreCase("A")) {
             System.out.println("A: interpret literally");
             countA = countA + 1;
+            sensing++;
            } else {
             System.out.println("B: look for meaning and possibilities");
             countB = countB + 1;
+            intuition++;
          }
         
         if (answers[5].equalsIgnoreCase("A")) {
             System.out.println("A: practical, realistic, experiential");
             countA = countA + 1;
+            sensing++;
            } else {
             System.out.println("B: imaginative, innovative, theoretical");
             countB = countB + 1;
+            intuition++;
          }
         
         if (answers[9].equalsIgnoreCase("A")) {
             System.out.println("A: standard, usual, conventional");
             countA = countA + 1;
+            sensing++;
            } else {
             System.out.println("B: different, novel, unique");
             countB = countB + 1;
+            intuition++;
         }
         
         if (answers[13].equalsIgnoreCase("A")) {
             System.out.println("A: focus on here-and-now");
             countA = countA + 1;
+            sensing++;
            } else {
             System.out.println("B: look to the future, global perspective, big picture");
             countB = countB + 1;
+            intuition++;
          }
         
         if (answers[17].equalsIgnoreCase("A")) {
             System.out.println("A: facts, things, what is");
             countA = countA + 1;
+            sensing++;
         } else {
             System.out.println("B: ideas, dreams, what could be, philosophical");
             countB = countB + 1;
+            intuition++;
         }
         
         System.out.println("Number of A selected:" + countA);
@@ -153,41 +178,51 @@ public class Mbti {
         if (answers[2].equalsIgnoreCase("A")) {
             System.out.println("A: logical, thinking, questioning");
             countA = countA + 1;
+            thinking++;
           } else {
             System.out.println("B: empathetic, feeling, accommodating");
             countB = countB + 1;
+            feeling++;
          }
         
         if (answers[6].equalsIgnoreCase("A")) {
             System.out.println("A: candid, straight forward, frank");
             countA = countA + 1;
+            thinking++;
           } else {
             System.out.println("B: tactful, kind, encouraging");
             countB = countB + 1;
+            feeling++;
           }
         
         if (answers[10].equalsIgnoreCase("A")) {
             System.out.println("A: firm, tend to criticize, hold the line");
             countA = countA + 1;
+            thinking++;
            } else {
             System.out.println("B: gentle, tend to appreciate, conciliate");
             countB = countB + 1;
+            feeling++;
         }
         
         if (answers[14].equalsIgnoreCase("A")) {
             System.out.println("A: tough-minded, just");
             countA = countA + 1;
+            thinking++;
            } else {
             System.out.println("B: tender-hearted, merciful");
             countB = countB + 1;
+            feeling++;
          }
         
         if (answers[18].equalsIgnoreCase("A")) {
             System.out.println("A: matter of fact, issue-oriented");
             countA = countA + 1;
+            thinking++;
           } else {
             System.out.println("B: sensitive, people-oriented, compassionate");
             countB = countB + 1;
+            feeling++;
           }
         
         System.out.println("Number of A selected:" + countA);
@@ -202,41 +237,51 @@ public class Mbti {
         if (answers[3].equalsIgnoreCase("A")) {
             System.out.println("A: organized, orderly");
             countA = countA + 1;
+            judging++;
         } else {
             System.out.println("B: flexible, adaptable");
             countB = countB + 1;
+            perceiving++;
           }
         
         if (answers[7].equalsIgnoreCase("A")) {
             System.out.println("A: plan, schedule");
             countA = countA + 1;
+            judging++;
            } else {
             System.out.println("B: unplanned, spontaneous");
             countB = countB + 1;
+            perceiving++;
          }
         
         if (answers[11].equalsIgnoreCase("A")) {
             System.out.println("A: regulated, structured");
             countA = countA + 1;
+            judging++;
            } else {
             System.out.println("B: easy-going, live and let live");
             countB = countB + 1;
+            perceiving++;
         }
         
         if (answers[15].equalsIgnoreCase("A")) {
             System.out.println("A: preparation, plan ahead");
             countA = countA + 1;
+            judging++;
            } else {
             System.out.println("B: go with the flow, adapt as you go");
             countB = countB + 1;
+            perceiving++;
          }
         
         if (answers[19].equalsIgnoreCase("A")) {
             System.out.println("A: control, govern");
             countA = countA + 1;
+            judging++;
           } else {
             System.out.println("B: latitude, freedom");
             countB = countB + 1;
+            perceiving++;
         }
         
         System.out.println("Number of A selected:" + countA);
